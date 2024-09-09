@@ -6,7 +6,13 @@
     <title>Cloudinary Uploader</title>
 </head>
 <body>
-    <h2>Cloudinary Uploader</h2>
-    <%= message %>
+    <div class="container">
+        <h1>Cloudy Uploader</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data"   autocomplete="off">
+            <label for="my-file">Imagen</label>
+            <input type="file" name="my-file" id="my-file"> <br>
+            <button type="submit">Subir</button>
+        </form>
+    </div>
 </body>
 </html>
